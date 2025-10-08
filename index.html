@@ -14,137 +14,145 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
-            padding: 12px;
+            padding: 10px;
             background: white;
             color: #000;
-            font-size: 14px;
-            line-height: 1.5;
+            font-size: 13px;
+            line-height: 1.4;
         }
         
         .page {
             max-width: 8.5in;
             min-height: 11in;
             margin: 0 auto;
-            padding: 0.5in;
+            padding: 0.45in;
             background: white;
             box-sizing: border-box;
         }
         
-        /* VISUAL HIERARCHY - Clear size differences */
+        /* TYPOGRAPHY - Optimized for space */
         h1 {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 900;
-            margin: 0 0 8px 0;
+            margin: 0 0 6px 0;
             text-align: center;
             text-transform: uppercase;
-            letter-spacing: 3px;
-            padding: 15px;
-            border: 6px solid #000;
+            letter-spacing: 2px;
+            padding: 12px;
+            border: 5px solid #000;
         }
         
         h2 {
-            font-size: 20px;
+            font-size: 17px;
             font-weight: 800;
-            margin: 18px 0 10px 0;
+            margin: 12px 0 8px 0;
             text-transform: uppercase;
             letter-spacing: 1px;
-            border-bottom: 4px solid #000;
-            padding-bottom: 6px;
+            border-bottom: 3px solid #000;
+            padding-bottom: 4px;
         }
         
         h3 {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
-            margin: 14px 0 8px 0;
+            margin: 10px 0 6px 0;
             text-transform: uppercase;
         }
         
         p {
-            font-size: 14px;
-            margin: 8px 0;
-            line-height: 1.6;
+            font-size: 13px;
+            margin: 6px 0;
+            line-height: 1.5;
         }
         
-        /* HIGH CONTRAST BOXES */
+        /* COMPACT BOXES */
         .story-section {
-            border: 4px solid #000;
-            padding: 18px;
-            margin: 20px 0;
+            border: 3px solid #000;
+            padding: 12px;
+            margin: 12px 0;
             background: white;
         }
         
         .critical-box {
-            border: 6px double #000;
-            padding: 15px;
-            margin: 20px 0;
+            border: 5px double #000;
+            padding: 12px;
+            margin: 12px 0;
             background: white;
         }
         
         .instructions-box {
             border: 3px solid #000;
-            border-left-width: 12px;
-            padding: 15px;
-            margin: 20px 0;
+            border-left-width: 10px;
+            padding: 12px;
+            margin: 12px 0;
             background: white;
         }
         
-        /* CLEAR VISUAL SEPARATION */
+        /* CREDENTIALS - 2 column layout */
         .fill-in-section {
             border: 2px solid #000;
-            padding: 12px;
-            margin: 15px 0;
+            padding: 10px;
+            margin: 12px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .fill-in-section h3 {
+            grid-column: 1 / -1;
+            margin: 0 0 8px 0;
         }
         
         .fill-in-section label {
             display: block;
             font-weight: 700;
-            font-size: 13px;
-            margin: 10px 0 4px 0;
+            font-size: 11px;
+            margin: 0 0 3px 0;
             text-transform: uppercase;
         }
         
         .fill-in-line {
             border-bottom: 2px solid #000;
-            min-height: 28px;
-            margin: 4px 0 12px 0;
+            min-height: 22px;
+            margin: 0 0 8px 0;
             display: block;
         }
         
-        /* DNA GRID - Optimized for B&W */
+        /* DNA GRID - More compact */
         .dna-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin: 15px 0;
+            gap: 8px;
+            margin: 10px 0;
         }
         
         .dna-box {
-            border: 3px solid #000;
-            padding: 12px;
-            min-height: 65px;
+            border: 2px solid #000;
+            padding: 8px;
+            min-height: 42px;
         }
         
         .dna-box strong {
             display: block;
-            font-size: 13px;
+            font-size: 11px;
             font-weight: 800;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             text-transform: uppercase;
         }
         
-        /* TABLE - Maximum clarity */
+        /* TABLE - Exactly 8 rows */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 15px 0;
+            margin: 12px 0;
             border: 3px solid #000;
         }
         
         th {
             background: #000;
             color: #fff;
-            padding: 12px 8px;
-            font-size: 14px;
+            padding: 10px 6px;
+            font-size: 13px;
             font-weight: 700;
             text-align: left;
             border: 2px solid #000;
@@ -153,173 +161,157 @@
         
         td {
             border: 2px solid #000;
-            padding: 12px 8px;
-            font-size: 13px;
+            padding: 10px 6px;
+            font-size: 12px;
             vertical-align: top;
             background: white;
         }
         
-        /* NUMBERED LISTS - Large, clear */
+        /* ORDERED LISTS - Compact */
         ol {
-            margin: 12px 0;
-            padding-left: 28px;
-            font-size: 14px;
-            line-height: 1.8;
+            margin: 8px 0;
+            padding-left: 24px;
+            font-size: 13px;
+            line-height: 1.6;
         }
         
         ol li {
-            margin: 10px 0;
-            padding-left: 8px;
+            margin: 6px 0;
+            padding-left: 4px;
         }
         
         ol li strong {
-            font-size: 15px;
+            font-size: 13px;
             font-weight: 800;
         }
         
-        /* EMPHASIS BOXES */
+        /* TIMER */
         .timer-box {
-            border: 8px solid #000;
-            padding: 18px;
+            border: 6px solid #000;
+            padding: 12px;
             text-align: center;
-            margin: 20px 0;
-            font-size: 22px;
+            margin: 12px 0;
+            font-size: 20px;
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
         
+        /* GUIDELINES - Compact list */
         .warning-box {
-            border: 5px solid #000;
-            padding: 15px;
-            margin: 20px 0;
+            border: 4px solid #000;
+            padding: 10px;
+            margin: 12px 0;
             background: white;
         }
         
         .warning-box p {
-            font-size: 15px;
-            font-weight: 700;
-            margin: 8px 0;
+            font-size: 12px;
+            font-weight: 600;
+            margin: 4px 0;
+            padding-left: 22px;
+            position: relative;
         }
         
-        /* SCORING SECTION */
+        .warning-box p::before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        
+        /* SCORING - More compact */
         .score-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin: 15px 0;
+            gap: 8px;
+            margin: 12px 0;
         }
         
         .score-box {
-            border: 3px solid #000;
-            padding: 12px;
+            border: 2px solid #000;
+            padding: 10px 6px;
             text-align: center;
-            min-height: 80px;
+            min-height: 65px;
         }
         
         .score-box strong {
             display: block;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 900;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
         
         .score-box .label {
             display: block;
-            font-size: 13px;
+            font-size: 11px;
             font-weight: 700;
-            margin: 4px 0;
+            margin: 3px 0;
             text-transform: uppercase;
         }
         
         .score-box .desc {
-            font-size: 11px;
-            margin-top: 4px;
+            font-size: 10px;
+            margin-top: 3px;
         }
         
-        /* REFLECTION BOXES */
+        /* REFLECTION - Reduced write space */
         .reflection-box {
             border: 3px solid #000;
-            padding: 15px;
-            margin: 15px 0;
+            padding: 10px;
+            margin: 12px 0;
         }
         
         .write-space {
             border: 2px solid #000;
-            min-height: 80px;
-            margin: 10px 0;
-            padding: 8px;
+            min-height: 55px;
+            margin: 8px 0;
+            padding: 6px;
         }
         
         /* FINAL REVEAL */
         .reveal-box {
-            border: 8px double #000;
-            padding: 20px;
-            margin: 20px 0;
+            border: 6px double #000;
+            padding: 14px;
+            margin: 12px 0;
             text-align: center;
         }
         
         .reveal-box h2 {
-            font-size: 24px;
-            margin-bottom: 12px;
+            font-size: 20px;
+            margin-bottom: 8px;
             border: none;
         }
         
         .reveal-box p {
-            font-size: 15px;
-            line-height: 1.7;
-            margin: 10px 0;
-        }
-        
-        /* ACCESSIBILITY */
-        strong {
-            font-weight: 700;
-        }
-        
-        .checkbox {
-            display: inline-block;
-            width: 18px;
-            height: 18px;
-            border: 3px solid #000;
-            margin-right: 8px;
-            vertical-align: middle;
-        }
-        
-        /* CLEAR SECTION BREAKS */
-        .section-break {
-            border-top: 4px solid #000;
-            margin: 25px 0;
-            padding-top: 20px;
-        }
-        
-        /* Footer */
-        .footer {
-            border-top: 3px solid #000;
-            margin-top: 20px;
-            padding-top: 12px;
-            text-align: center;
-            font-size: 11px;
-        }
-        
-        /* Stamps and labels */
-        .stamp {
-            display: inline-block;
-            border: 4px solid #000;
-            padding: 8px 16px;
-            font-weight: 900;
-            font-size: 18px;
-            margin: 10px 0;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        
-        .case-number {
-            font-size: 12px;
-            font-weight: 700;
-            text-align: center;
+            font-size: 13px;
+            line-height: 1.6;
             margin: 8px 0;
+        }
+        
+        /* UTILITIES */
+        .case-number {
+            font-size: 11px;
+            font-weight: 700;
+            text-align: center;
+            margin: 6px 0;
             text-transform: uppercase;
             letter-spacing: 1px;
+        }
+        
+        .footer {
+            border-top: 3px solid #000;
+            margin-top: 12px;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 10px;
+        }
+        
+        .section-break {
+            border-top: 3px solid #000;
+            margin: 15px 0;
+            padding-top: 12px;
         }
     </style>
 </head>
@@ -345,14 +337,18 @@
         
         <div class="fill-in-section">
             <h3>Agent Credentials</h3>
-            <label>Agent Codename (Your Name):</label>
-            <span class="fill-in-line"></span>
-            
-            <label>Today's Date:</label>
-            <span class="fill-in-line"></span>
-            
-            <label>Mission Start Time:</label>
-            <span class="fill-in-line"></span>
+            <div>
+                <label>Agent Codename (Your Name):</label>
+                <span class="fill-in-line"></span>
+            </div>
+            <div>
+                <label>Today's Date:</label>
+                <span class="fill-in-line"></span>
+            </div>
+            <div style="grid-column: 1 / -1;">
+                <label>Mission Start Time:</label>
+                <span class="fill-in-line"></span>
+            </div>
         </div>
         
         <div class="instructions-box">
@@ -370,18 +366,16 @@
         
         <div class="warning-box">
             <h3>Agent Guidelines:</h3>
-            <p><span class="checkbox"></span> Be respectful and kind to all fellow agents</p>
-            <p><span class="checkbox"></span> Look for surprising connections, not just obvious ones</p>
-            <p><span class="checkbox"></span> Keep moving—spend 2-3 minutes maximum per person</p>
-            <p><span class="checkbox"></span> Find MULTIPLE matches with each person when possible</p>
-            <p><span class="checkbox"></span> Remember: Every connection weakens The Memory Thief!</p>
+            <p>Be respectful and kind to all fellow agents</p>
+            <p>Look for surprising connections, not just obvious ones</p>
+            <p>Keep moving—spend 2-3 minutes maximum per person</p>
+            <p>Find MULTIPLE matches with each person when possible</p>
+            <p>Remember: Every connection weakens The Memory Thief!</p>
         </div>
-        
-        <div class="section-break"></div>
         
         <div class="critical-box">
             <h2>Your DNA Profile</h2>
-            <p style="font-size: 13px;"><strong>IMPORTANT:</strong> Fill these out honestly! Other agents will compare their DNA markers to yours. Each match creates a powerful connection.</p>
+            <p style="font-size: 11px;"><strong>IMPORTANT:</strong> Fill these out honestly! Other agents will compare their DNA markers to yours. Each match creates a powerful connection.</p>
             
             <div class="dna-grid">
                 <div class="dna-box">
@@ -441,7 +435,7 @@
         <div class="instructions-box">
             <h3>Logging Instructions</h3>
             <p>For each agent you interview, write their name in the left column and LIST EVERY CONNECTION you discovered in the right column. Even small matches count! <strong>Try to find 2-4 connections with each person.</strong></p>
-            <p><strong>Example:</strong> "Agent Sarah — both love pizza, both night people, both have 2 siblings, both afraid of spiders"</p>
+            <p style="font-size: 12px;"><strong>Example:</strong> "Agent Sarah — both love pizza, both night people, both have 2 siblings, both afraid of spiders"</p>
         </div>
         
         <table>
@@ -484,55 +478,45 @@
                     <td>8.</td>
                     <td></td>
                 </tr>
-                <tr>
-                    <td>9.</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>10.</td>
-                    <td></td>
-                </tr>
             </tbody>
         </table>
         
-        <div class="section-break"></div>
-        
         <div class="critical-box">
             <h2>Power Calculation</h2>
-            <p style="font-size: 16px;"><strong>Count EVERY connection you found across all agents:</strong></p>
-            <p style="font-size: 18px; margin: 15px 0;">
+            <p style="font-size: 14px;"><strong>Count EVERY connection you found across all agents:</strong></p>
+            <p style="font-size: 16px; margin: 10px 0;">
                 <strong>Total Connection DNA Samples Collected:</strong> 
-                <span style="display: inline-block; border-bottom: 4px solid #000; min-width: 100px; margin: 0 10px;"></span>
+                <span style="display: inline-block; border-bottom: 3px solid #000; min-width: 80px; margin: 0 8px;"></span>
             </p>
-            <p style="font-size: 14px;"><strong>Minimum needed to defeat The Memory Thief: 20 connections</strong></p>
+            <p style="font-size: 12px;"><strong>Minimum needed to defeat The Memory Thief: 20 connections</strong></p>
         </div>
         
         <div class="score-grid">
             <div class="score-box">
                 <strong>0-15</strong>
                 <span class="label">Trainee Agent</span>
-                <span class="desc">Keep building connections!</span>
+                <span class="desc">Keep building!</span>
             </div>
             <div class="score-box">
                 <strong>16-25</strong>
                 <span class="label">Field Agent</span>
-                <span class="desc">Solid investigation!</span>
+                <span class="desc">Solid work!</span>
             </div>
             <div class="score-box">
                 <strong>26-35</strong>
                 <span class="label">Elite Operative</span>
-                <span class="desc">Exceptional work!</span>
+                <span class="desc">Exceptional!</span>
             </div>
             <div class="score-box">
                 <strong>36+</strong>
                 <span class="label">Master Agent</span>
-                <span class="desc">Legendary status!</span>
+                <span class="desc">Legendary!</span>
             </div>
         </div>
         
         <div class="reflection-box">
             <h3>Rare Discovery Bonus</h3>
-            <p>Did you find an ULTRA-RARE connection that only you and ONE other person share? Document your most unique discovery here:</p>
+            <p style="font-size: 12px;">Did you find an ULTRA-RARE connection that only you and ONE other person share? Document your most unique discovery here:</p>
             <div class="write-space"></div>
         </div>
         
@@ -540,25 +524,24 @@
             <h2>The Truth Revealed</h2>
             <p><strong>The Memory Thief was never real.</strong> It was a metaphor for the isolation and division we create when we focus only on our differences.</p>
             <p>YOU defeated it by discovering an important truth: <strong>We share far more than we realize.</strong> Despite our unique qualities, we have countless connections that unite us.</p>
-            <p style="font-size: 16px; font-weight: 700; margin-top: 15px;">Your connections are proof that humanity is more united than divided.</p>
+            <p style="font-size: 14px; font-weight: 700; margin-top: 10px;">Your connections are proof that humanity is more united than divided.</p>
         </div>
         
         <div class="reflection-box">
             <h3>Mission Debrief</h3>
             
-            <label style="font-weight: 700; display: block; margin: 12px 0 6px 0;">What surprised you most about your shared connections with classmates?</label>
+            <label style="font-weight: 700; display: block; margin: 8px 0 4px 0; font-size: 12px;">What surprised you most about your shared connections with classmates?</label>
             <div class="write-space"></div>
             
-            <label style="font-weight: 700; display: block; margin: 12px 0 6px 0;">How did this mission change your perspective on the people in your class?</label>
+            <label style="font-weight: 700; display: block; margin: 8px 0 4px 0; font-size: 12px;">How did this mission change your perspective on the people in your class?</label>
             <div class="write-space"></div>
         </div>
         
         <div class="footer">
-            <p style="font-weight: 700; font-size: 13px; margin: 8px 0;">
-                <span class="checkbox"></span> MISSION COMPLETE 
-                <span class="checkbox"></span> MISSION FAILED
+            <p style="font-weight: 700; font-size: 12px; margin: 6px 0;">
+                ☐ MISSION COMPLETE  ☐ MISSION FAILED
             </p>
-            <p style="margin: 8px 0; font-size: 10px;">The Memory Thief Mystery © 2025</p>
+            <p style="margin: 6px 0; font-size: 9px;">The Memory Thief Mystery © 2025</p>
         </div>
     </div>
 </body>
